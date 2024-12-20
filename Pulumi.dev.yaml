@@ -1,0 +1,9 @@
+environment:
+  - cloud-access/aws-access
+  - stackmgmt
+config:
+  aws:region: us-west-2
+  mitch-platinum-okapi-py:instanceType: t3.micro
+  mitch-platinum-okapi-py:numInstances: "1"
+  mitch-platinum-okapi-py:vpcNetworkCidr: 10.0.0.0/16
+  pulumi:template: https://github.com/pulumi-pequod/pequod-templates/aws-ec2-py

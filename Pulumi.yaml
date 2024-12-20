@@ -1,0 +1,10 @@
+name: mitch-platinum-okapi-py
+description: Deploy one or more EC2 instances running a simple webserver.
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: https://github.com/pulumi-pequod/pequod-templates/aws-ec2-py
